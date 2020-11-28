@@ -1,0 +1,152 @@
+.footer {
+    background-color: $bg-color;
+    color: $white;
+    padding-bottom: 28.43px;
+
+    img {
+        @media (max-width: 768px) {
+            max-width: 24px;
+            max-height: auto;
+        }
+    }
+
+    a {
+        @media (max-width: 768px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &-info {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 22px;
+        margin-bottom: 24px;
+
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            padding: 24px 15px;
+        }
+    }
+
+    &-inner {
+        justify-content: space-between;
+    }
+
+    .note-info {
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+        a {
+            color: $white;
+            transition: color 0.2s linear;
+
+            &:hover {
+                color: $dark;
+            }
+        }
+
+        .note-group {
+            &:not(:last-child) {
+                margin-bottom: 17px;
+            }
+
+            img {
+                margin-right: 17px;
+            }
+        }
+    }
+}
+
+.footer-inner-list {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.footer-inner-items {
+    a {
+        color: $white;
+        padding: 48px 24px 36px 0px;
+        transition: color 0.3s;
+
+        @media (max-width: 768px) {
+            padding: 40px 40px 24px 24px;
+            font-size: 16px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $dark;
+            font-size: 20px;
+        }
+    }
+}
+
+.social {
+    padding-top: 36px;
+
+    @media (max-width: 600px) {
+        width: 45%;
+        padding-top: 0;
+    }
+
+    img {
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    li:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+.footer-caution {
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 15px;
+
+        span{
+            margin-bottom: 7px;
+        }
+    }
+    img {
+        display: none;
+    }
+}
+
+.caution-list {
+    display: flex;
+    @media (max-width: 600px){
+        flex-direction: column;
+    }
+
+    .caution-items {
+        @media (max-width: 600px) {
+
+            margin-bottom: 7px;
+        }
+        a {
+            color: $white;
+            transition: color 0.2s linear;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+            &:hover {
+                color: $dark;
+            }
+        }
+
+        &:last-child {
+            margin-left: 62px;
+
+            @media (max-width: 600px) {
+                margin-left: 0;
+            }
+        }
+    }
+}

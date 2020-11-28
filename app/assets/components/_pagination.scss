@@ -1,0 +1,29 @@
+
+$page-color: #555555;
+
+.pagination{
+
+    display: flex;
+    margin-bottom: 156px;
+    .page-items{
+
+        &:nth-child(3){
+            background-color:$dark;
+        }
+
+        a{
+            padding: 10px 17px 14px 14px;
+            border: 1px solid $page-color;
+            color: $page-color;
+
+            &:hover,&:focus{
+                background-color: $dark;
+                color: $white;
+            }
+
+            &:nth-child(3){
+                color: $white;
+            }
+        }
+    }
+}

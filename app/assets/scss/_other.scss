@@ -1,0 +1,120 @@
+.design-section {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+    height: 743px;
+
+    padding-top: 64px;
+    padding-bottom: 80px;
+    margin-bottom: 64px;
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
+
+    h2 {
+        margin-bottom: 60px;
+    }
+
+    .img-md-text {
+        display: flex;
+        position: relative;
+        &:first-child {
+            margin-right: 30px;
+        }
+
+        img {
+            /* max-width: 540px; */
+            z-index: 2;
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+
+        h2 {
+            position: absolute;
+            left: 28%;
+            top: 42%;
+            z-index: 3;
+
+            font-size: $font-size * 9;
+            font-weight: bold;
+            line-height: 108px;
+            color: $bg-color;
+
+            @media (max-width: 768px) {
+                font-size: $font-size * 4;
+                line-height: 25px;
+            }
+
+            @media (max-width:500px){
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.bg-side {
+    &-size {
+        height: 309px;
+        width: 50%;
+        @media (max-width:575px){
+            height: 144px;
+        }
+    }
+
+    &-1 {
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week4/banner-1.png);
+        margin-right: 30px;
+    }
+    &-2 {
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week4/banner-2.png);
+    }
+    &-3 {
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week4/banner-3.png);
+        margin-right: 30px;
+    }
+
+    &-4 {
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png);
+    }
+}
+
+
+
+
+
+
+.question-section {
+    margin-bottom: 304px;
+    @media (max-width:768px){
+        padding: 0 15px;
+    }
+}
+
+.question-caption {
+    font-size: 32px;
+    line-height: 63px;
+    margin-bottom: 36px;
+}
+
+.question {
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 72px;
+
+        @media (max-width: 414px){
+            padding-left: 0;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.search {
+    /*    margin-bottom: 82px; */
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+    .search-list {
+        display: flex;
+        
+    }
+
+    .search-items {
+        a {
+            color: $white;
+            padding: 12px 24px 14px 0px;
+            transition: color 0.3s;
+            &:hover,
+            &:focus {
+                color: $dark;
+            }
+        }
+    }
+
+    a {
+        padding: 12px;
+    }
+}

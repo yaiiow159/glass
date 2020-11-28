@@ -1,0 +1,49 @@
+.tag {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    color: $bg-color;
+
+    @media (max-width: 768px) {
+        font-size: $font-size * 2;
+    }
+
+    @media (max-width:500px){
+        padding: 0 15px;
+    }
+
+    .tag-item {
+        margin-right: 24px;
+        max-width: 50%;
+
+        a {
+            color: $bg-color;
+            transition: color 0.3s;
+
+            &:hover,
+            &:focus {
+                color: $dark;
+                transform: scale(1.2);
+            }
+
+            &::before {
+                content: "#";
+            }
+        }
+    }
+}
+
+.tag-title {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 42px;
+    color: $bg-color;
+
+    @media(max-width: 768px){
+        font-size: 20px;
+    }
+}

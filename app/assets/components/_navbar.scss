@@ -1,0 +1,85 @@
+$dark: #000;
+$white: #fff;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+
+    @media (max-width: 575px) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    &-bg {
+        &-blood {
+            background-color: $bg-color;
+        }
+        &-dark {
+            background-color: $dark;
+        }
+
+        &-white {
+            background-color: $white;
+        }
+    }
+
+    &-color {
+        &-white {
+            .navbar-list-items > a {
+                color: $white;
+            }
+        }
+
+        &-dark {
+            .navbar-list-items > a {
+                color: $dark;
+            }
+        }
+    }
+
+    &-logo {
+        margin: 30px 64px;
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png);
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 49px;
+
+        @media (max-width: 575px) {
+            width: 100%;
+            margin: 10px 0;
+            background-position:center center;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        &-items {
+            @media (max-width: 575px) {
+                width: 50%;
+                text-align: center;
+                border: 1px solid $white;
+            }
+            a {
+                padding: 40px 20px;
+                font-size: 20px;
+                transition: color 0.3s;
+
+                @media (max-width: 575px) {
+                    padding: 8px 64px;
+                    line-height: 28px;
+                }
+
+                @media (max-width:375px){
+                    font-size: 12px;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

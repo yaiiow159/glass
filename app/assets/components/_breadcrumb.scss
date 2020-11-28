@@ -1,0 +1,35 @@
+.breadcrumb{
+    display: flex;
+
+    @media (max-width:500px){
+        padding: 0 15px;
+    }
+
+
+    .breadcrumb-item{
+        
+        font-size: 16px;
+        line-height: 24px;
+        transition: color 0.3s;
+        cursor: pointer;
+
+        @media (max-width: 768px){
+            font-size: 14px;
+        }
+      
+        
+        &:hover,&:focus{
+            color: $bg-color;
+        }
+
+        &:not(:last-child)::after{
+            content: "/";
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+
+        &:last-child{
+            color: $bg-color;
+        }
+    }
+}

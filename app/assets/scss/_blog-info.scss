@@ -1,0 +1,124 @@
+$blog-info-color: #0a0a0a;
+
+.blog-info-container {
+    border-bottom: 1px solid #707070;
+
+    @media (max-width: 500px){
+        padding: 0 15px;
+        display: block;
+    }
+
+    .main-content {
+        margin-right: 30px;
+
+        @media (max-width: 500px){
+            width: 100%;
+        }
+    }
+
+    .asidebar{
+        @media (max-width:500px){
+            width: 100%;
+        }
+    }
+}
+
+.blog-info-list {
+    h2 {
+        font-size: 48px;
+        line-height: 67px;
+
+        @media (max-width: 768px) {
+            font-size: $font-size * 4;
+            line-height: 45px;
+        }
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 37px;
+
+        @media (max-width: 768px) {
+            font-size: $font-size * 2;
+            line-height: 21px;
+        }
+
+        span {
+            font-size: $font-size * 2;
+            color: #6c6c6c;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    .blog-info {
+        p {
+            color: rgba($blog-info-color, 0.6);
+            font-size: $font-size * 2;
+            font-weight: bold;
+            line-height: 24px;
+        }
+    }
+}
+
+.share {
+    display: flex;
+    align-items: baseline;
+    color: $blog-info-color;
+
+    @media (max-width: 500px){
+        margin-bottom: 27.5px;
+    }
+
+    .share-logo {
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.page-list {
+    margin-bottom: 104px;
+
+    @media (max-width:500px){
+        display: block;
+        margin-bottom: 75px;
+    }
+
+    .page-previous {
+        align-items: baseline;
+        img {
+            margin-right: $space;
+        }
+        a {
+            color: $dark;
+        }
+    }
+
+    .page-next {
+        align-items: baseline;
+        
+        .page-next-none {
+            margin-left: $space;
+            @media (max-width:500px){
+                display: none;
+            }
+        }
+
+        .page-next-show{
+            display: none;
+            margin-right: $space;
+            @media (max-width:500px){
+                display: block;
+                margin-bottom: $space;
+            }
+        }
+        a {
+            color: $dark;
+        }
+    }
+}
